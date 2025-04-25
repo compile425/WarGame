@@ -31,7 +31,7 @@ GEM
       pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (2.10.2)
+    json (2.11.3)
     language_server-protocol (3.17.0.4)
     lint_roller (1.1.0)
     logger (1.7.0)
@@ -57,7 +57,7 @@ GEM
       io-console (~> 0.5)
     robocop (0.1.1)
       rack
-    rubocop (1.75.2)
+    rubocop (1.75.3)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -71,6 +71,16 @@ GEM
     rubocop-ast (1.44.1)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
+    rubocop-md (2.0.1)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.72.1)
+    rubocop-minitest (0.38.0)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.75.0, < 2.0)
+      rubocop-ast (>= 1.38.0, < 2.0)
+    rubocop-packaging (0.6.0)
+      lint_roller (~> 1.1.0)
+      rubocop (>= 1.72.1, < 2.0)
     rubocop-rails (2.31.0)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
@@ -93,6 +103,9 @@ PLATFORMS
 DEPENDENCIES
   debug
   robocop
+  rubocop-md
+  rubocop-minitest
+  rubocop-packaging
   rubocop-rails
 
 BUNDLED WITH
